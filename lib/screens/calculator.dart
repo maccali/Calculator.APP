@@ -25,11 +25,12 @@ class _CalculatorState extends State<Calculator> {
     ]);
 
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: Column(
-      children: <Widget>[
-        Display(memory.value),
-        Keyboard(_onPressed),
-      ],
-    ));
+          children: <Widget>[
+            Display(memory.value),
+            Keyboard(_onPressed),
+          ],
+        ));
   }
 }
